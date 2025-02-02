@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Taggers Report/Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .support-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .support-form h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .support-form input, 
+        .support-form textarea, 
+        .support-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .support-form button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .support-form button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h2>Report bad monkes on Ice Taggers IN-GAME</h2>
+    <form class="support-form" action="https://formspree.io/f/xvgzrbbn" method="POST">
+        <h2>Report/Feedback Form</h2>
+<h4>Only choose other if the player breaking the rules isn't listed here. Please post video proof/evidence</h4>
+
+        <input type="text" name="reporter_name" placeholder="What's your name?" required />
+<br>        
+        <input type="text" name="reported_name" placeholder="Player Being Reported" required />
+        
+        <label for="reason">Reason for Report:</label>
+        <select name="reason" id="reason" required>
+            <option value="" disabled selected>Select a reason</option>
+            <option value="Racism">Racism</option>
+            <option value="Sexism">Sexism</option>
+            <option value="Homophobia/Transphobia">Homophobia/Transphobia</option>
+            <option value="Other Bigotry">Other Bigotry</option>
+            <option value="Modding">Modding</option>
+            <option value="Abusing Glitches">Abusing Glitches</option>
+            <option value="Playspace Abuse">Playspace Abuse</option>
+            <option value="Harassment">Harassment</option>
+            <option value="Making Players Uncomfortable">Making Players Uncomfortable</option>
+            <option value="Griefing/Trolling">Griefing/Trolling</option>
+            <option value="Escaping the Map">Escaping the Map</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Bad Name">Bad Name</option>
+            <option value="Impersonation of Staff/Youtuber">Impersonation of Staff/Youtuber</option>
+            <option value="Name is GORILLA####">Name is GORILLA####</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <textarea name="message" rows="4" placeholder="Type a description on what the player did to break the rules. Please put video evidence."></textarea>
+        <button type="submit">Send Report</button>
+    </form>
+</body>
+</html>
